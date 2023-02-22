@@ -374,7 +374,11 @@ class FirstPageExceptionIndicator extends StatelessWidget {
             Text(
               title,
               textAlign: TextAlign.center,
-              style: Theme.of(context).textTheme.headline6,
+              style: TextStyle(color: Colors.white,
+              fontSize: 20,
+              fontWeight: FontWeight.w500,
+              wordSpacing: 0.15),
+              
             ),
             if (message != null)
               const SizedBox(
@@ -384,6 +388,7 @@ class FirstPageExceptionIndicator extends StatelessWidget {
               Text(
                 message,
                 textAlign: TextAlign.center,
+                style: TextStyle(color: Colors.white),
               ),
             if (onTryAgain != null)
               const SizedBox(
@@ -395,6 +400,9 @@ class FirstPageExceptionIndicator extends StatelessWidget {
                 width: double.infinity,
                 child: ElevatedButton.icon(
                   onPressed: onTryAgain,
+                  style: ElevatedButton.styleFrom(
+                         backgroundColor: Color.fromARGB(255,255,99,71) //elevated btton background color
+                      ),
                   icon: const Icon(
                     Icons.refresh,
                     color: Colors.white,

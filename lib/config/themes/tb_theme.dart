@@ -3,7 +3,7 @@ import 'package:thingsboard_app/utils/transition/page_transitions.dart';
 
 const int _tbPrimaryColorValue = 0xFF305680;
 const Color _tbPrimaryColor = Color(_tbPrimaryColorValue);
-const Color _tbSecondaryColor = Color(0xFF527dad);
+const Color _tbSecondaryColor = Color.fromARGB(255, 41, 117, 204);
 const Color _tbDarkPrimaryColor = Color(0xFF9fa8da);
 
 const int _tbTextColorValue = 0xFF282828;
@@ -48,12 +48,12 @@ final ThemeData theme = ThemeData(primarySwatch: tbMatIndigo);
 ThemeData tbTheme = ThemeData(
     primarySwatch: tbMatIndigo,
     colorScheme: theme.colorScheme.copyWith(secondary: Colors.deepOrange),
-    scaffoldBackgroundColor: Color(0xFFFAFAFA),
+    scaffoldBackgroundColor: Color.fromARGB(255, 27, 66, 223),
     textTheme: tbTypography.black,
-    primaryTextTheme: tbTypography.black,
+    primaryTextTheme: tbTypography.white,
     typography: tbTypography,
     appBarTheme: AppBarTheme(
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.green,
         foregroundColor: _tbTextColor,
         /* titleTextStyle: TextStyle(
           color: _tbTextColor
@@ -63,7 +63,7 @@ ThemeData tbTheme = ThemeData(
       ), */
         iconTheme: IconThemeData(color: _tbTextColor)),
     bottomNavigationBarTheme: BottomNavigationBarThemeData(
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.green,
         selectedItemColor: _tbPrimaryColor,
         unselectedItemColor: _tbPrimaryColor.withAlpha((255 * 0.38).ceil()),
         showSelectedLabels: true,

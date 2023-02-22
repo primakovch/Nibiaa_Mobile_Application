@@ -50,7 +50,7 @@ class _HomePageState extends TbContextState<HomePage>
         actions: [
           if (tbClient.isSystemAdmin())
             IconButton(
-              icon: Icon(Icons.search),
+              icon: Icon(Icons.search, color: Colors.white),
               onPressed: () {
                 navigateTo('/tenants?search=true');
               },
